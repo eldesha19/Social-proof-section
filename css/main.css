@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Cairo:wght@700&family=Inter:wght@400;700&family=Jomhuria&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Open+Sans:ital,wght@1,300&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--White);
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 1.5rem;
+    overflow: hidden;
+    background: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right 67vw bottom 57vh, left 60vw top -21vh;
+}
+main{
+    max-width: 1020px;
+    margin-bottom: 2rem;
+}
+.container .head-1{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+.container .head-1 .title{
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    font-size: 50px;
+    width: 330px;
+    margin-bottom: 2rem;
+}
+.container .head-1 .p-1{
+    color: var(--Dark-Grayish-Magenta);
+    font-weight: 500;
+    width: 385px;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+.container .head-1 .rate{
+    width: 600px;
+    align-content: flex-end;
+}
+.container .head-1 .rate .review,
+.container .head-1 .rate .Guru,
+.container .head-1 .rate .BestTech{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    padding: 20px;
+    background-color: var(--Light-Grayish-Magenta);
+    margin-bottom: 20px;
+    border-radius: .5rem;
+}
+.container .head-1 .p-2{
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+#spec{
+    margin-left: -70px;
+}
+.review .star {
+    margin-left: -35px;
+}
+.container .head-1 .rate .review{
+    margin-left: 12%;
+}
+.container .head-1 .rate .Guru{
+    margin-left: 22%;
+}
+.container .head-1 .rate .BestTech{
+    margin-left: 33%;
+}
+.container .avatars{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+.container .avatars .avatar-1{
+    background-color: var(--Very-Dark-Magenta);
+    padding: 30px 20px;
+    border-radius: .5rem;
+    height: fit-content;
+}
+.container .avatars .avatar-1 .image img{
+    border-radius: 50%;
+    width: 40px;
+    margin-left: -105px;
+}
+.container .avatars .avatar-1 .name{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.container .avatars .avatar-1 .name .name-1{
+    margin-left: -255px;
+}
+.container .avatars .avatar-1 h3{
+    color: var(--White);
+    margin-bottom: 5px;
+}
+.container .avatars .avatar-1 .p-3{
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--Soft-Pink);
+}
+.container .avatars .avatar-1 .p-4{
+    color: var(--Light-Grayish-Magenta);
+    line-height: 1.5;
+}
+#two{
+    margin-top: 20px;
+}
+#three{
+    margin-top: 50px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media (max-width: 425px){
+    body{
+        overflow: visible;
+        background: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top 0vw left 0, right 0 bottom 85px;
+    }
+    main{
+        width: 350px;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .container .head-1{
+        flex-direction: column;
+    }
+    .container .head-1 .title{
+        text-align: center;
+        line-height: .7;
+        padding: 5px;
+        margin: auto;
+        font-size: 25px;
+        width: 225px;
+        margin-bottom: 1rem;
+    }
+    .container .head-1 .p-1{
+        text-align: center;
+        margin: auto;
+        width: 290px;
+        margin-bottom: 1rem ;
+    }
+    .container .head-1 .rate{
+        margin: auto;
+        text-align: center;
+        max-width: 100%;
+    }
+    .container .head-1 .rate .review,
+    .container .head-1 .rate .Guru,
+    .container .head-1 .rate .BestTech{
+        margin-left: 0;
+        max-width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    #spec{
+        margin-left: 0;
+    }
+    .review .star {
+        margin-left: 0;
+    }
+    .container .head-1 .rate .star{
+        margin-bottom: 5px;
+    }
+    .container .avatars{
+        grid-template-columns: 1fr;
+    }
+    .container .avatars .avatar-1{
+        margin-bottom: 1rem;
+    }
+    #two{
+        margin-top: 0;
+    }
+    #three{
+        margin-top: 0;
+    }
+}
